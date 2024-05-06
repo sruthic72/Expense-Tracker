@@ -1,0 +1,44 @@
+.content{
+    padding: 50px 10px;
+    overflow: scroll;
+    height: -webkit-fill-available;
+    background: linear-gradient(to bottom, #411d6e, #2a0b4f);
+    color: white;
+}
+.content h1{
+    text-align: center;
+}
+.chart{
+    background-color: #EEEEEE11;
+    padding: 0.5%;
+    margin: 0.2%;
+    outline: white solid;
+    border-radius: 20px;
+}
+
+.figure-cards table{
+    width: -webkit-fill-available;
+    font-size: 12px;
+    text-align: left;
+}
+.figure-cards table td{
+    border-bottom: black solid 0.5px;
+}
+
+.chart-medium{
+    max-width: 30%;
+}
+.chart-large{
+    max-width: 45%;
+}
+.chart-small{
+    max-width: 30%;
+}
+.plots{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}

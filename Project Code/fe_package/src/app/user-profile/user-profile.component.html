@@ -1,0 +1,29 @@
+<section class="content" *ngIf="loaded">
+    <h1>Profile</h1>
+
+    <form [formGroup]="profileForm" (ngSubmit)="onEditSubmit()" >
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" formControlName="username" class="form-control" [readOnly]="true" style="color: gray;"/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" formControlName="name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="name">Password</label>
+            <input type="text" id="password" formControlName="password" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Update Profile</button>
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+    </form>
+</section>

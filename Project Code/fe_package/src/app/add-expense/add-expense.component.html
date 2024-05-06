@@ -1,0 +1,67 @@
+<section class="content">
+  <h1>Add Expense</h1>
+  <p>To add an expense enter the following details</p>
+
+  <div class="row">
+
+    <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <p class="description">The amount you spent</p>
+        <input type="text" id="amount" formControlName="amount" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="date">Date</label>
+        <p class="description">Date you made this expendature</p>
+        <input type="date" id="date" formControlName="date" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="category">Category</label>
+        <p class="description">Choose a category of your expendature</p>
+        <p class="description" style="font-style: italic;" *ngIf="categories<=0">You can add a category if it does not exist in the list.</p>
+        <select id="categories" name="categories" formControlName="category">
+          <option *ngFor="let option of categories" [value]="option">{{ option }}</option>
+        </select>
+        
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <p class="description">Add a description to help you remember and identify your expenses</p>
+        <input type="text" id="description" formControlName="description" class="form-control" required />
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+      </div>
+  
+  
+    </form>
+
+    <div class="form-group" style="margin: 0px 30px;">
+      <label>Manage Categories</label>
+      <p class="description">Add a category into your categories list that can be used for identifying your expendature now and later on too!</p>
+      <div class="row jc-sb">
+        <input type="text" [(ngModel)]="addingCategory">
+        <button class="add" (click)="addCategory()">Add</button>
+      </div>
+      <p class="description" style="margin-top: 10px;">Remove a category you may have added before from the list here.</p>
+      <div class="col">
+        <div class="category" *ngFor="let category of categories; let i = index">
+          <p style="font-size: 12px;">{{category}}</p>
+          <button class="delete" (click)="deleteCategory(i)">Remove</button>
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+  
+  
+
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  
+
+</section>

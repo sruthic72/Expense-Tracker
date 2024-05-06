@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #fefefe;
+    --primary-color-lighter: #555;
+    --secondary-color: #6A409F;
+    --secondary-color-darker: #4f2781;
+
+    --transition: all 0.3s ease-in-out;
+}
+*{
+    transition: var(--transition);
+}
+html,body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+button{
+    background: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: var(--secondary-color-darker);
+}
+
+button:active{
+    border-radius: 20px;
+}
+
+
+form{
+    padding: 20px;
+    margin: 20px 20%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.form-group{
+    margin: 30px;
+    background-color: #EEE;
+    color: #000;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+}
+.form-group .description{
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+.form-group input{
+    min-width: 50%;
+}
+
+.form-group label{
+    font-size: 20px;
+    margin: 0px;
+}
+.alert{
+    color: white;
+}
+
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+select{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    min-width: 50%;
+    border: black solid 2px;
+}
+
+.figure-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.figure-card{
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+    color: black;
+    width: max-content;
+    text-align: center;
+    min-width: 500px;
+    display: grid;
+}
+.figure-card h2{
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+.figure-card h3{
+    font-size: 40px;
+}
+
+.m-5{
+    margin: 5px;
+}
+
+.content{
+    padding: 80px 50px;
+}
+
+.row{
+    display: flex;
+}
+.jc-sb{
+    justify-content: space-between;
+}

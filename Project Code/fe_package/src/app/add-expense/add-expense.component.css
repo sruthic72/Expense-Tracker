@@ -1,0 +1,31 @@
+.content{
+    padding: 50px 10px;
+    overflow: scroll;
+    height: -webkit-fill-available;
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    outline: black solid;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.category button{
+    font-size: 12px;
+    background-color: #970101;
+}
+
+.form-group{
+    margin: 10px 30px;
+    background-color: #EEE;
+    color: #000;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    height: max-content;
+}
+
+form{
+    margin: 0;
+}

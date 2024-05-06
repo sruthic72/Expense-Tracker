@@ -1,0 +1,104 @@
+.content {
+    padding: 50px 10px;
+    overflow: scroll;
+    height: -webkit-fill-available;
+}
+
+.table {
+    width: 100%;
+    background-color: #225;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+tr {
+    border-bottom: 1px solid #AAAAAAAA;
+}
+
+td {
+    padding: 10px;
+    margin: 5px 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.edit {
+    padding: 5px 10px;
+    color: white;
+    background-color: #EE8800;
+    font-weight: 600;
+}
+
+.delete {
+    padding: 5px 10px;
+    color: white;
+    background-color: #ff2200;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 18px;
+}
+
+.amount {
+    font-size: 30px;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.middle {
+    text-align: center;
+}
+
+
+
+
+
+.table-container {
+    overflow-y: auto;
+    /* make the table scrollable if height is more than 200 px  */
+    height: 900px;
+    /* gives an initial height of 200px to the table */
+}
+
+.table-container thead th {
+    position: sticky;
+    /* make the table heads sticky */
+    top: 0px;
+    /* table head will be placed from the top of the table and sticks to it */
+}
+
+table {
+    border-collapse: collapse;
+    /* make the table borders collapse to each other */
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+    outline: 1px solid #ccc;
+}
+
+th {
+    background: var(--secondary-color-darker);
+    color: white;
+}

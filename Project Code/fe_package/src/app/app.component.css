@@ -1,0 +1,30 @@
+nav{
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    background-color: var(--secondary-color-darker);
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
+nav button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav button i{
+    margin: 5px;
+}
+
+.notification{
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    background: linear-gradient(to bottom, #4f2781, #755799);
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+}

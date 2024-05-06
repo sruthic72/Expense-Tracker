@@ -1,0 +1,5 @@
+.content{
+    padding: 50px 10px;
+    overflow: scroll;
+    height: -webkit-fill-available;
+}

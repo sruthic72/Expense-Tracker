@@ -1,0 +1,16 @@
+<nav>
+  <button routerLink=""><i class="fas fa-house-chimney"></i>Home</button>
+  <button routerLink="login" *ngIf="!isLoggedIn()">Log In</button>
+  <button routerLink="signup" *ngIf="!isLoggedIn()">Sign Up</button>
+  <button *ngIf="isLoggedIn()" (click)="logout()"><i class="fas fa-door-open"></i>Log Out</button>
+  <button routerLink="dashboard" *ngIf="isLoggedIn()"><i class="fas fa-chart-column"></i>Dashboard</button>
+  <button routerLink="all-expenses" *ngIf="isLoggedIn()"><i class="fas fa-rectangle-list"></i>All Expenses</button>
+  <button routerLink="add-expense" *ngIf="isLoggedIn()"><i class="fas fa-square-plus"></i>Add Expense</button>
+  <button routerLink="user-profile" *ngIf="isLoggedIn()"><i class="fas fa-user-large"></i>Profile</button>
+</nav>
+
+<div class="notification" *ngIf="showNotification()">
+  <p>{{getNotificationMessage()}}</p>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,68 @@
+
+
+a{
+    padding-right: 10px;
+}
+
+.row{
+    display: flex;
+}
+.col{
+    display: block;
+}
+img{
+    object-fit: contain;
+}
+.welcome-section{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, #6A409F, #370973);
+    color: white;
+    padding: 5%;
+    border-radius: 20px;
+}
+.welcome-section-content{
+    align-self: center;
+    
+}
+.welcome-section-content p{
+    width: 80%;
+}
+.welcome-section-img{
+    width: 30%;
+    
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+.feature-box{
+    background: linear-gradient(to bottom, #3e0f79, #371164);
+    color: white;
+    padding: 30px;
+    width: 23%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.steps{
+    display: block;
+    align-items: center;
+    text-align: -webkit-center;
+}
+.step{
+    border: 1px solid #371164;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 22px;
+    width: 50%;
+}
+
+.getting-started{
+    text-align: -webkit-center;
+}

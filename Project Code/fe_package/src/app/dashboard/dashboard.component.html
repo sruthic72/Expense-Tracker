@@ -1,0 +1,53 @@
+<section class="content">
+    <h1>Dashboard</h1>
+
+
+
+    <section class="figure-cards">
+        <div class="figure-card">
+            <h2>Total Expenses In Past {{nDays}} days</h2>
+            <h3>{{accumulatedExpensesOfLastNDays}}</h3>
+        </div>
+        <div class="figure-card">
+            <h2>Expenses in Past {{nDays*2}} Days Trend</h2>
+            <h3>{{expensesDiff}}%
+                <i *ngIf="expensesDiff>0" class='fas fa-arrow-circle-up' style="color: red;"></i>
+                <i *ngIf="expensesDiff<0" class='fas fa-arrow-circle-down' style="color: green;"></i>
+                <i *ngIf="expensesDiff==0" class='fas fa-circle-minus' style="color: orange;"></i>
+            </h3>
+
+        </div>
+        <div class="figure-card">
+            <h2>Top {{topNExpenses_N}} Expensive Things</h2>
+            <table>
+                <thead>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let expense of topNExpenses">
+                        <td>{{expense.amount}}</td>
+                        <td>{{expense.date.split('T')[0]}}</td>
+                        <td>{{expense.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="plots">
+        <canvas id="days_chart" class="chart chart-large"></canvas>
+        <canvas id="months_chart" class="chart chart-large"></canvas>
+        <canvas id="years_chart" class="chart chart-medium"></canvas>
+        <canvas id="categories_count_pie_chart" class="chart chart-small"></canvas>
+        <canvas id="categories_sum_pie_chart" class="chart chart-small"></canvas>
+        <canvas id="freq_in_amount_ranges_chart" class="chart" style="max-width: 70%;"></canvas>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+
+
+
+</section>

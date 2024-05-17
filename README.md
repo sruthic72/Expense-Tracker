@@ -9,6 +9,8 @@ Computing resources for testing and deployment.
 Software tools - Node.js, relevant IDEs (VS Code), and database management tools (MySQL + workbench)
 
 # To see the ouput
-Open frontend package and install necessary pacakges and then run the command ng serve.
-Open backend package and connect to MySQL server and then run the command npm start.
+• Open frontend package, install necessary packages and then run the command ng serve.
+• Copy https link and paste in the browser.
+• Open backend package, install necessary packages, connect to MySQL server and then run the command npm start.
+
 

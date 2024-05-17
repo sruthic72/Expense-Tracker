@@ -1,7 +1,7 @@
 # Expense-Tracker
 
 #Abstract
-To create an application that is accessible and feature-rich, enhancing user experience in tracking expenses, including secure user registration, expense recording and categorization, visual expense representation, time-based tracking, and analytical tools for expenditure analysis.
+- To create an application that is accessible and feature-rich, enhancing user experience in tracking expenses, including secure user registration, expense recording and categorization, visual expense representation, time-based tracking, and analytical tools for expenditure analysis.
 
 #Required Materials and Technology
 - Development tools - Angular, Express, MySQL.
